@@ -1,0 +1,142 @@
+.boton {
+    display: inline-block;
+    padding: 14px 32px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: rgba(8, 8, 10, 0.78);
+    border: 1px solid #ff6b35;
+    border-radius: 6px;
+    padding: 20px;
+    width: 250px;
+}
+
+.video-youtube {
+    align-items: center;
+    background: linear-gradient(120deg, #ff3c78, #ff6b35, #3e5fce);
+    border: 4px solid #ff6b35;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 8px;
+}
+
+.video-youtube iframe {
+    aspect-ratio: 16 / 9;
+    border: 0;
+    width: 100%;
+}
+
+.contador {
+    background-color: #000000;
+    border: 2px solid #ff6b35;
+    color: #ff6b35;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 15px 25px;
+}
+
+.link-video {
+    color: #ff6b35;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+}
+
+.personaje {
+    background-color: rgba(0, 0, 0, 0.78);
+    border: 2px solid #ff6b35;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.personaje img {
+    display: block;
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.personaje div {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.personaje h3 {
+    color: #ff6b35;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.personaje p {
+    line-height: 1.4;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.aviso-video {
+    background: linear-gradient(120deg, #000000, #880186);
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.aviso-video h3 {
+    color: #ff6b35;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.aviso-video p {
+    line-height: 1.5;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}

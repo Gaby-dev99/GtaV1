@@ -1,0 +1,471 @@
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    /* HEADER */
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+    
+    header h2 {
+        color: white;
+        font-size: 1.8rem;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+    /* HERO */
+    
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.80)), url("https://www.rockstargames.com/VI/_next/static/media/hero.443c6d70.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 80px 40px;
+        box-sizing: border-box;
+    }
+    
+    .caja-principal {
+        max-width: 600px;
+        animation: aparecer 1.5s ease;
+    }
+    /* BOTÓN */
+    
+    .boton {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 15px 35px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius: 40px;
+        transition: 0.3s ease;
+    }
+    
+    .boton:hover {
+        background: white;
+        color: black;
+        transform: scale(1.05);
+    }
+    /* PLAY BUTTON */
+    
+    .overlay {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .play-btn {
+        width: 120px;
+        height: 120px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        transition: 0.3s ease;
+    }
+    
+    .play-btn span {
+        color: #6d6d6d;
+        font-size: 48px;
+        margin-left: 8px;
+    }
+    
+    .play-btn:hover {
+        transform: scale(1.08);
+    }
+    /* SECCIONES */
+    
+    .seccion {
+        background: #000;
+        padding: 60px 40px;
+        text-align: center;
+    }
+    
+    .seccion h2 {
+        font-family: Impact, Arial Black, sans-serif;
+        font-size: 34px;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+    /* FECHA DE LANZAMIENTO */
+    
+    .fecha-lanzamiento {
+        background: #000;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 80px 20px;
+    }
+    
+    .contenedor-fecha {
+        max-width: 900px;
+        width: 100%;
+    }
+    
+    .disponible {
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        background: linear-gradient( 135deg, #ff3c78, #ff6b35, #3e5fce);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .fecha {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.3;
+        margin: 0;
+        text-transform: uppercase;
+        background: linear-gradient( 135deg, #ff3c78, #ff6b35, #3e5fce);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteLetras 8s ease infinite;
+    }
+    /* ANIMACIONES */
+    /* RESPONSIVE */
+    
+    @media (max-width: 700px) {
+        header {
+            display: block;
+            text-align: center;
+        }
+        .hero {
+            padding: 80px 20px;
+        }
+        .fecha {
+            font-size: 2rem;
+        }
+        .play-btn {
+            width: 90px;
+            height: 90px;
+        }
+        .play-btn span {
+            font-size: 36px;
+        }
+    }
+    
+    .plataformas {
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    
+    .plataformas img {
+        height: 55px;
+        width: auto;
+        opacity: 0.9;
+        transition: 0.3s ease;
+    }
+    
+    .plataformas img:hover {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    
+    .historia {
+        background: radial-gradient(circle at center, #16132d 0%, #090814 45%, #000000 100%);
+        padding: 140px 20px;
+    }
+    
+    .contenedor-historia {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .historia h2 {
+        font-size: 5rem;
+        margin-bottom: 40px;
+        font-weight: 700;
+        background: linear-gradient( 135deg, #d92f9d, #ff6da9);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .historia p {
+        font-size: 2rem;
+        line-height: 1.4;
+        max-width: 950px;
+        font-weight: 500;
+        background: linear-gradient( 135deg, #ff5ca8, #ff9d8f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    /*personaje*/
+    /* ============================================
+   PERSONAJES - ESTILO UNIFICADO
+   ============================================ */
+    /* BANNER PRINCIPAL - IMAGEN EXPANDIDA SIN BORDES */
+    
+    .banner-personaje {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .banner-personaje img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    /* SECCIÓN PERSONAJE - TEXTO + IMAGEN LATERAL */
+    
+    .personaje-rockstar {
+        max-width: 1300px;
+        margin: 0 auto 100px auto;
+        padding: 80px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    /* Para alternar el orden (texto izquierda - imagen derecha) */
+    
+    .personaje-rockstar:nth-child(even) {
+        flex-direction: row;
+    }
+    
+    .personaje-rockstar:nth-child(odd) {
+        flex-direction: row;
+    }
+    /* Si quieres que algunos tengan la imagen a la izquierda, añade esta clase */
+    
+    .personaje-rockstar.imagen-izquierda {
+        flex-direction: row-reverse;
+    }
+    
+    .texto-personaje {
+        flex: 1;
+    }
+    
+    .texto-personaje h2 {
+        font-size: 3.5rem;
+        color: #f3efd5;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    
+    .texto-personaje h3 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 25px;
+        background: linear-gradient(135deg, #ff5ab7, #ffb7c7);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .texto-personaje p {
+        color: #cccccc;
+        font-size: 1rem;
+        line-height: 1.7;
+        max-width: 550px;
+    }
+    /* IMAGEN LATERAL DEL PERSONAJE */
+    
+    .imagen-personaje {
+        flex: 1;
+    }
+    
+    .imagen-personaje img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    
+    .imagen-personaje img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    /* ============================================
+   SECCIÓN LEONIDA (COSAS DE LEONIDA)
+   ============================================ */
+    
+    .cosas-leonida {
+        max-width: 1300px;
+        margin: 0 auto 120px auto;
+        padding: 80px 40px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 60px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .titulo-leonida h2 {
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 1.2;
+        background: linear-gradient(135deg, #ff5ab7, #ffb7c7, #3e5fce);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .texto-leonida p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        color: #dddddd;
+        max-width: 500px;
+        font-style: italic;
+    }
+    /* ============================================
+   ANIMACIÓN DEGRADADO DIFUMINADO - COLORES MÚLTIPLES
+   ============================================ */
+    
+    @keyframes gradienteDifuminado {
+        0% {
+            background-position: 0% 50%;
+        }
+        25% {
+            background-position: 50% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        75% {
+            background-position: 50% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /* ============================================
+   APLICAR EFECTO A TEXTOS ESPECÍFICOS
+   ============================================ */
+    /* Título DISPONIBLE */
+    
+    .disponible {
+        font-size: 0.9rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #ff6b35, #ff3c78, #9b30ff, #3e5fce, #ff6b35);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteDifuminado 8s ease infinite;
+    }
+    /* Fecha de lanzamiento */
+    
+    .fecha {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.3;
+        margin: 0;
+        text-transform: uppercase;
+        background: linear-gradient(135deg, #ff6b35, #ff3c78, #9b30ff, #3e5fce, #ff6b35);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteDifuminado 8s ease infinite;
+    }
+    /* Título de personajes (h3 con gradiente) */
+    
+    .texto-personaje h3 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        margin-bottom: 25px;
+        background: linear-gradient(135deg, #ff6b35, #ff3c78, #9b30ff, #3e5fce, #ff6b35);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteDifuminado 8s ease infinite;
+    }
+    /* Título de Leonida */
+    
+    .titulo-leonida h2 {
+        font-size: 6rem;
+        line-height: 0.95;
+        margin: 0;
+        background: linear-gradient(135deg, #ff6b35, #ff3c78, #9b30ff, #3e5fce, #ff6b35);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteDifuminado 10s ease infinite;
+    }
+    /* Texto de Leonida */
+    
+    .texto-leonida p {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        max-width: 500px;
+        background: linear-gradient(135deg, #ff6b35, #ff3c78, #9b30ff, #3e5fce, #ff6b35);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteDifuminado 10s ease infinite;
+    }
+    /* Historia título */
+    
+    .historia h2 {
+        font-size: 5rem;
+        margin-bottom: 40px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #ff6b35, #ff3c78, #9b30ff, #3e5fce, #ff6b35);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteDifuminado 10s ease infinite;
+    }
+    /* Historia párrafo */
+    
+    .historia p {
+        font-size: 2rem;
+        line-height: 1.4;
+        max-width: 950px;
+        font-weight: 500;
+        background: linear-gradient(135deg, #ff6b35, #ff3c78, #9b30ff, #3e5fce, #ff6b35);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradienteDifuminado 10s ease infinite;
+    }
